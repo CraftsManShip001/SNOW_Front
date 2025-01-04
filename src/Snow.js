@@ -3,6 +3,8 @@ import axios from 'axios';
 import React from "react";
 import {useState} from "react";
 
+
+
 function Snow() {
   const getSnow = async () =>{
     const server = process.env.REACT_APP_SERVER;

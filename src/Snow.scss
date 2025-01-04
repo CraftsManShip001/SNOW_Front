@@ -63,6 +63,7 @@ body {
   filter: drop-shadow(0 0 10px white);
 }
 
+
 @function random_range($min, $max) {
   $rand: random();
   $random_range: $min + floor($rand * (($max - $min) + 1));
@@ -105,5 +106,30 @@ body {
         transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
       }
     }
+  }
+}
+@media (max-width: 1040px) {
+  .snow{
+    margin-bottom: 100%;
+  }
+}
+@media (max-width: 590px) {
+  h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: 'HakgyoansimByeolbichhaneulTTF-B', sans-serif;
+  } 
+  h3{
+    font-family: 'SF_HailSnow', sans-serif;
+    font-size: 0.7rem;
+  }
+  button{
+    font-family: 'SF_HailSnow', sans-serif;
+    width: 300px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  .snow{
+    margin-bottom: 200%;
   }
 }
