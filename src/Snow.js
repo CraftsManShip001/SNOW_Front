@@ -26,7 +26,7 @@ function Snow() {
         const total = await getSnow();
         setTemp(total[0]);
         setRain(total[1]);
-        setSnow(total[2].toFixed(3));
+        setSnow(total[2]?.toFixed(3) || '0.000');
 
       }}>예측해주세요!</button>
       <div class="snow"></div>
