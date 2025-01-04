@@ -18,7 +18,7 @@ function Snow() {
   let [snow,setSnow] = useState('뭘까요?');
   return (
     <div className='container'>
-      <h1>눈을 예측해드립니다</h1>
+      <h1>부산 눈을 예측해드립니다</h1>
       <h3>온도 : <span>{temp}</span> C</h3>
       <h3>강수량 : <span>{rain}</span> mm</h3>
       <h3>내가 생각하는 오늘 눈이 내려질 확률 : <span>{snow}</span> %</h3>
