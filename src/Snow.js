@@ -7,8 +7,7 @@ import {useState} from "react";
 
 function Snow() {
   const getSnow = async (city) =>{
-    // const server = process.env.REACT_APP_SERVER;
-    const server = 'http://0.0.0.0:8000'
+    const server = process.env.REACT_APP_SERVER;
     try {
         const response = await axios.post(`${server}/snow`,{
           city:city
@@ -42,7 +41,6 @@ function Snow() {
         </select>
       </form>
       <button onClick={async()=>{
-        console.log(city);
         const total = await getSnow(city);
         setTemp(total[0]);
         setRain(total[1]);
