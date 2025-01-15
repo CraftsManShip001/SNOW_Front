@@ -70,6 +70,13 @@ body {
   @return $random_range;
 }
 
+select{
+  width: 100%;
+  padding: 1% 120px;
+  font-size: 1.25rem;
+  font-family: 'SF_HailSnow', sans-serif;
+}
+
 .snow {
   margin-bottom: 50%;
   margin-right: 100%;
