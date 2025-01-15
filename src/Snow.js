@@ -22,7 +22,7 @@ function Snow() {
   let [temp,setTemp] = useState('뭘까요?');
   let [rain,setRain] = useState('뭘까요?');
   let [snow,setSnow] = useState('뭘까요?');
-  const [city, setCity] = useState('서울');
+  const [city, setCity] = useState('Seoul');
   return (
     <div className='container'>
       <h1>눈을 예측해드립니다</h1>
