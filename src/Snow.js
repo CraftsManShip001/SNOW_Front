@@ -28,7 +28,7 @@ function Snow() {
       <h1>눈을 예측해드립니다</h1>
       <h3>온도 : <span>{temp}</span> C</h3>
       <h3>강수량 : <span>{rain}</span> mm</h3>
-      <h3>내가 생각하는 지금 눈이 내려질 확률 : <span>{snow}</span> %</h3>
+      <h3>내가 생각하는 지금 눈이 내려질 확률 : <span>{snow*100}</span> %</h3>
       <form>
         <select value={city} onChange={e => setCity(e.target.value)}>
           <option value='Seoul'>서울</option>
