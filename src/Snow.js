@@ -28,7 +28,7 @@ function Snow() {
       <h1>눈을 예측해드립니다</h1>
       <h3>온도 : <span>{temp}</span> C</h3>
       <h3>강수량 : <span>{rain}</span> mm</h3>
-      <h3>내가 생각하는 지금 눈이 내려질 확률 : <span>{snow*100}</span> %</h3>
+      <h3>내가 생각하는 지금 눈이 내려질 확률 : <span id = "find">{(snow*100).toFixed(1)}</span> %</h3>
       <form>
         <select value={city} onChange={e => setCity(e.target.value)}>
           <option value='Seoul'>서울</option>
@@ -44,8 +44,7 @@ function Snow() {
         const total = await getSnow(city);
         setTemp(total[0]);
         setRain(total[1]);
-        setSnow(total[2]?.toFixed(3) || '0.000');
-
+        setSnow(parseFloat(total[2].toFixed(3)));
       }}>예측해주세요!</button>
       <div class="snow"></div>
       <div class="snow"></div>
